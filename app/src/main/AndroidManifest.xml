@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMVVMLiveData">
         <activity
-            android:name=".ActivityVerEquipos"
+            android:name=".View.ActivityEditEquipo"
             android:exported="false" />
         <activity
-            android:name=".AddEquipo"
+            android:name=".View.ActivityVerEquipos"
+            android:exported="false" />
+        <activity
+            android:name=".View.AddEquipo"
             android:exported="false" />
         <activity
             android:name=".View.MainActivity"

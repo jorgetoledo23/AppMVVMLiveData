@@ -62,14 +62,10 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
-
-    //RecyclerView
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     // For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
 
-    //CardView
     implementation "androidx.cardview:cardview:1.0.0"
-
 
 }

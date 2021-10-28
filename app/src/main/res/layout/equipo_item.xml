@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    >
+    android:layout_height="200dp">
 
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -10,36 +9,33 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        card_view:cardCornerRadius="20dp"
         android:layout_margin="10dp"
-        card_view:cardBackgroundColor="@color/teal_700"
-        >
+        card_view:cardCornerRadius="30dp"
+        card_view:cardBackgroundColor="@color/teal_700">
 
         <TextView
             android:id="@+id/tvEquipo"
-            android:text="Nombre Equipo"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Nombre Equipo"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:textSize="24sp"
+            android:textStyle="italic"
             android:layout_gravity="start|top"/>
 
         <TextView
             android:id="@+id/tvCantidad"
-            android:textColor="@color/white"
-            android:text="Cantidad"
-            android:textSize="24sp"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"/>
-
+            android:text="Cantidad"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:layout_gravity="bottom|end"/>
 
 
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>

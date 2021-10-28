@@ -1,9 +1,10 @@
-package com.example.appmvvmlivedata
+package com.example.appmvvmlivedata.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appmvvmlivedata.Model.EquipoProvider
+import com.example.appmvvmlivedata.R
 import com.example.appmvvmlivedata.databinding.ActivityVerEquiposBinding
 
 class ActivityVerEquipos : AppCompatActivity() {
@@ -19,9 +20,17 @@ class ActivityVerEquipos : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        initRecycler()
+    }
+
+
+
+
     private fun initRecycler() {
-        binding.EquiposRecyclerList.layoutManager = LinearLayoutManager(this)
+        binding.EquiposRecyclerView.layoutManager = LinearLayoutManager(this)
         val adapter = EquipoAdapter(EquipoProvider.getEquipos())
-        binding.EquiposRecyclerList.adapter = adapter
+        binding.EquiposRecyclerView.adapter = adapter
     }
 }

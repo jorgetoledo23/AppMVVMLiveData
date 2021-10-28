@@ -1,12 +1,10 @@
-package com.example.appmvvmlivedata
+package com.example.appmvvmlivedata.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.room.Database
 import com.example.appmvvmlivedata.Data.EquiposDb
 import com.example.appmvvmlivedata.Model.Equipo
 import com.example.appmvvmlivedata.databinding.ActivityAddEquipoBinding
-import com.example.appmvvmlivedata.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

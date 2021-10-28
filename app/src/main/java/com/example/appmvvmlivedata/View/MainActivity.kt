@@ -5,11 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import com.example.appmvvmlivedata.ActivityVerEquipos
-import com.example.appmvvmlivedata.AddEquipo
 import com.example.appmvvmlivedata.Data.EquiposDb
 import com.example.appmvvmlivedata.Model.EquipoProvider
-import com.example.appmvvmlivedata.R
 import com.example.appmvvmlivedata.ViewModel.EquipoViewModel
 import com.example.appmvvmlivedata.databinding.ActivityMainBinding
 
@@ -39,8 +36,14 @@ class MainActivity : AppCompatActivity() {
         binding.container.setOnClickListener{ equipoViewModel.EquipoRandom() }
 
         binding.btnAddEquipo.setOnClickListener{ addEquipo()}
-        binding.btnMostrarTodos.setOnClickListener{ verTodos()}
 
+        binding.btnVerTodos.setOnClickListener{ verEquipos()}
+
+    }
+
+    private fun verEquipos() {
+        val intent = Intent(this, ActivityVerEquipos::class.java)
+        startActivity(intent)
     }
 
     private fun addEquipo() {
@@ -48,10 +51,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun verTodos() {
-        val intent = Intent(this, ActivityVerEquipos::class.java)
-        startActivity(intent)
-    }
+
 
 
 

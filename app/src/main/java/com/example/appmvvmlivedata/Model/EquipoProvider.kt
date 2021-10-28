@@ -25,7 +25,5 @@ class EquipoProvider {
             return this.equipos
         }
 
-
-
     }
 }
